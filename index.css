@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+#earth{
+    border: 1px solid;
+    height: 98vh;
+}
+#land{
+    background: darkgreen;
+    border: 1px solid;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#sun{
+    width: 125px;
+    height: 125px;
+    border: 1px solid;
+    border-radius: 50%;
+    background: #ffe531;
+}
+#moon{
+    width: 125px;
+    height: 125px;
+    border: 1px solid;
+    border-radius: 50%;
+    background: #d0d5d2;
+}
