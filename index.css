@@ -120,15 +120,103 @@
     height: 200px;
 }
 .house{
-    position: relative;
+    /* position: relative; */
 }
 .roof{
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 25px solid red;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid saddlebrown;
+    position: absolute;
+    bottom: 20px;
 }
+.roof:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 11px solid lightblue;
+    position: absolute;
+    top: 4px;
+    left: -12px;
+  }
 .restOfHouse{
-
+    width: 25px;
+    height: 20px;
+    background: lightblue;
+    border-left: 2px solid saddlebrown;
+    border-right: 2px solid saddlebrown;
+    border-top: 2px solid saddlebrown;
+    position: absolute;
+    bottom: 0;
+    left: 2.4px;
+}
+.main1{
+    position: absolute;
+    bottom: 0;
+    left: 49px;
+}
+.main2{
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+}
+.main3{
+    position: absolute;
+    bottom: 0;
+    left: 78px;
+}
+.main4{
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+}
+.main5{
+    position: absolute;
+    bottom: 0;
+    right: 69px;
+}
+#eastTown{
+    position: absolute;
+    left: 103px;
+    bottom: 192px;
+    border: tan solid 1px;
+    width: 400px;
+    height: 77px;
+    display: inline-flex;
+}
+.barn{
+    width: 170px;
+}
+.mainBarn{
+    background: darkred;
+    display: inline-block;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 57px;
+    position: relative;
+    width: 45px;
+    margin-bottom: -2px;
+}
+.mainBarn:before{
+    border-bottom: 18px solid darkred;
+    border-left: 22.5px solid transparent;
+    border-right: 22.5px solid transparent;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -18px;
+    width: 0;
+}
+.crops{
+    background: url(311728.svg);
+    background-size: 7px 23px;
+    height: 30px;
+    width: 100px;
+    /* border: 1px solid; */
+    margin-bottom: -11px;
+    display: inline-block;
 }
