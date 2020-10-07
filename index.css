@@ -7,10 +7,10 @@
     height: 98vh;
     /* background: linear-gradient(blue, lightblue); */
     /* background: rgb(246,79,89); */
-    background: linear-gradient(0deg, rgba(246,79,89,1) 0%, rgba(247,183,51,1) 17%, rgba(66,134,244,1) 71%);
+    background: linear-gradient(0deg, rgba(246,79,89,1) 0%, rgba(247,183,51,1) 17%, rgba(66,134,244,1) 31%);
     background-size: 400% 400%;
-	-webkit-animation: gradientBG 15s ease infinite;
-	        animation: gradientBG 15s ease infinite;
+	-webkit-animation: sky 18s ease infinite;
+	        animation: sky 18s ease infinite;
 }
 /* @-webkit-keyframes gradientBG {
 	0% {
@@ -23,7 +23,7 @@
 		background-position: 0% 50%;
 	}
 } */
-@keyframes gradientBG {
+@keyframes sky {
 	0% {
 		background-position: center bottom;
 	}
@@ -54,11 +54,11 @@
 #sun{
     width: 125px;
     height: 125px;
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 50%;
     background: #ffe531;
     animation-name: sun;
-    animation: sun 15s linear infinite;
+    animation: sun 18s linear infinite;
     /* animation-duration: 15s;
     animation-timing-function: linear; */
     background: radial-gradient(
@@ -86,6 +86,7 @@
 #dragon{
     width: 100px;
     position: absolute;
+    top: 20%;
     animation-name: dragon;
     animation-duration: 15s;
     animation-timing-function: linear;
@@ -126,13 +127,66 @@
 }
 .cloud{
     width: 170px;
+    position: absolute;
 }
+.topCloud{
+    width: 75% !important;
+    height: 70px;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* -webkit-animation: upperSky 35s ease infinite;
+	        animation: upperSky 35s ease infinite; */
+}
+@keyframes upperSky {
+  0%{left: 0%;}
+  50%{left: 50%;}
+  100%{left: 100%;}
+}
+.middleCloud{
+    height: 70px;
+    top: 36%;
+    -webkit-animation: middleSky 45s linear infinite;
+	animation: middleSky 45s linear infinite;
+}
+@keyframes middleSky {
+    0% {right: 0;}
+    10% {right: 20%;}
+    20% {right: 40%;}
+    30% {right: 60%;}
+    40% {right: 80%;}
+    50% {right: 100%;}
+    60% {right: 80%;}
+    70% {right: 60%;}
+    80% {right: 40%;}
+    90% {right: 20%;}
+    100% {right: 0;}
+  }
+.bottomCloud{
+    top: 44%;
+    -webkit-animation: bottomSky 55s linear infinite;
+	animation: bottomSky 55s linear infinite;
+}
+@keyframes bottomSky {
+    0% {left: 0;}
+    10% {left: 20%;}
+    20% {left: 40%;}
+    30% {left: 60%;}
+    40% {left: 80%;}
+    50% {left: 100%;}
+    60% {left: 80%;}
+    70% {left: 60%;}
+    80% {left: 40%;}
+    90% {left: 20%;}
+    100% {left: 0;}
+  }
 #moon{
     width: 125px;
-    height: 125px;
-    border: 1px solid;
+    height: auto;
+    /* border: 1px solid;
     border-radius: 50%;
-    background: #d0d5d2;
+    background: #d0d5d2; */
 }
 #cityContainer{
     position: absolute;
@@ -291,4 +345,15 @@
     /* border: 1px solid; */
     margin-bottom: -11px;
     display: inline-block;
+}
+.five{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    /* border: 1px solid; */
+}
+#windowsFive{
+    border: 2px solid;
+    background-color: black;
 }
